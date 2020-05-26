@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        form {
+            margin: auto;
+            width: 60%;
+            padding: 1.3em;
+            border: 4px solid #CCC;
+            border-radius: 1em;
+        }
+
+        form div {
+            margin-top: -0.5em;
+        }
+
+        /**/
+
+        label {
+            display: inline-block;
+            width: 30%;
+            text-align: right;
+        }
+
+
+
+        input {
+            font: 0.9em sans-serif;
+            width: 50%;
+            border: 1px solid #999;
+
+        }
+
+        .changeButton {
+            width: 15%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur, felis sit amet tempor interdum,
+            enim dui consectetur felis, quis pretium urna nisi a mauris. Fusce rhoncus tellus eu faucibus rutrum. Cras
+            commodo elit hendrerit enim gravida, ac ullamcorper quam suscipit. Pellentesque id nulla vulputate,
+            vulputate erat eget, consequat urna. Pellentesque molestie magna vel luctus bibendum. Pellentesque
+            scelerisque pharetra tincidunt. Phasellus ut felis mauris. Etiam in magna orci. Nunc tellus dui, iaculis sit
+            amet semper quis, auctor non tortor. Ut pellentesque ac lectus quis egestas. Cras in sem feugiat, tristique
+            arcu mattis, tincidunt tellus. Nullam quis euismod tellus, et malesuada velit. In hac habitasse platea
+            dictumst. Quisque placerat condimentum eros, quis scelerisque quam mattis vel. Ut venenatis hendrerit
+            auctor. Nulla fringilla ipsum in ante fermentum, at finibus ex pharetra.
+        </p>
+        <p>
+            Aliquam faucibus lorem sed nunc porttitor luctus. Suspendisse potenti. Nulla porta ac ex a fermentum. Duis
+            non urna vitae urna tincidunt dignissim. Curabitur volutpat non nisi quis dictum. Ut placerat ligula mauris,
+            et iaculis magna malesuada eget. Aenean feugiat elit vitae libero sollicitudin vehicula. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Phasellus purus massa, auctor vel nulla sed, finibus viverra dolor.
+            Donec tincidunt ultricies lorem ut posuere. Mauris rutrum leo ut mauris bibendum pretium. Praesent semper
+            suscipit eros, vitae aliquam lacus consectetur vitae. Vivamus ac commodo massa. Proin eu cursus enim. Sed
+            dapibus nunc in nisl dictum, vel euismod leo gravida.
+        </p>
+        <p>
+            Sed cursus tortor nec mauris condimentum, at rhoncus magna euismod. Mauris rutrum egestas felis ut interdum.
+            In ullamcorper magna ac velit fringilla, non interdum tortor porta. Curabitur bibendum sem aliquam,
+            consectetur neque in, accumsan dui. Nulla consequat, nunc at convallis sollicitudin, lacus ante sodales
+            metus, sed ornare lorem tellus quis dui. Sed porttitor mauris a aliquet ultrices. Mauris ex tellus, ornare
+            sit amet leo eu, pulvinar vulputate mi. Praesent vehicula tellus sapien, quis fringilla ante dictum ac. Nam
+            a sagittis risus, eget mollis est. Aliquam feugiat mattis turpis, sit amet tempor felis vestibulum a.
+        </p>
+        <p>
+            Nulla ex mi, varius in feugiat non, sodales vitae eros. Ut dolor est, mollis quis turpis eu, iaculis
+            pellentesque ex. Aliquam nec venenatis nisi, eu laoreet quam. Maecenas eget magna non felis hendrerit
+            posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed
+            ultrices, est vel convallis efficitur, nunc tellus egestas est, ac facilisis velit lectus vitae odio.
+            Curabitur ut feugiat dui. Mauris eget magna gravida, aliquet sem sed, blandit nibh. Nulla urna libero,
+            fermentum quis velit sit amet, pellentesque rutrum ante. Integer at laoreet ante. Sed sit amet vulputate
+            elit. Sed at sapien sem. Cras purus tortor, dapibus at maximus vitae, gravida sit amet tellus.
+        </p>
+        <p>
+            Nulla quam ipsum, consectetur eu nulla sit amet, aliquam venenatis orci. Pellentesque eget justo a metus
+            posuere eleifend. Nam luctus malesuada pulvinar. Etiam finibus ligula sit amet risus ultricies, non pretium
+            leo sodales. Pellentesque placerat orci ac mauris consectetur, tincidunt efficitur risus laoreet. Phasellus
+            porttitor arcu vel nisi elementum auctor. Curabitur ante ante, molestie ac convallis id, pellentesque eu
+            tortor. Proin porttitor nunc commodo sapien finibus, id venenatis nisl pharetra. In eget interdum mi. Fusce
+            tellus nibh, auctor et magna ac, bibendum aliquam arcu. Sed posuere tortor non nisl consequat, non euismod
+            dui placerat. Vestibulum auctor, leo sit amet tristique semper, ligula justo porttitor libero, at hendrerit
+            urna nulla ac massa. Pellentesque luctus sem vel odio faucibus, eu commodo justo volutpat. Nunc at velit
+            felis.
+        </p>
+    </div>
+    <form action="#" method="post">
+        <label for="chgBkgColor">Altere a cor do Fundo: </label>
+        <input type="text" id="chgBkgColor" value="Type a color name (eng)" onfocus="this.value='';">
+        <input type="button" class="changeButton" value="Change" onclick="changeBkgColor()"><br><br>
+
+        <label for="chgTxtColor">Altere a cor da fonte</label>
+        <input type="text" id="chgTxtColor" value="Type a color name (eng)" onfocus="this.value='';">
+        <input type="button" class="changeButton" value="Change" onclick="changeTxtColor()"><br><br>
+
+        <label for="chgFntSize">Altere o tamanho da fonte</label>
+        <input type="number" id="chgFntSize">
+        <input type="button" class="changeButton" value="Change" onclick="changeTxtSize()"><br><br>
+
+        <label for="chgSpacing">Altere o espaçamento do texto</label>
+        <input type="number" id="chgSpacing">
+        <input type="button" class="changeButton" value="Change" onclick="changeSpacing()"><br><br>
+
+        <label for="chgTypFont">Altere o tipo da fonte</label>
+        <input type="text" id="chgTypFont" value="Type a font name (eng)" onfocus="this.value='';">
+        <input type="button" class="changeButton" value="Change" onclick="changeTypeFont()"><br><br>
+    </form>
+
+    <script>
+
+        function changeBkgColor() {
+            let bkgColor = document.getElementById('chgBkgColor').value;
+            localStorage.setItem("background", bkgColor);
+            document.body.style.backgroundColor = bkgColor;
+        }
+
+        let color = localStorage.background;
+        if (color) document.body.style.backgroundColor = color;
+
+        function changeTxtColor() {
+            let txtColor = document.getElementById('chgTxtColor').value;
+            localStorage.setItem("textColor", txtColor);
+            document.body.style.color = txtColor;
+        }
+
+        let txtColor = localStorage.textColor;
+        if (txtColor) document.body.style.color = txtColor;
+
+        function changeTxtSize() {
+            let txtSize = document.getElementById('chgFntSize').value;
+            localStorage.setItem("textSize", txtSize);
+            document.body.style.fontSize = txtSize + "px";
+        }
+
+        let txtSize = localStorage.textSize;
+        if (txtSize) document.body.style.fontSize = txtSize.value;   //**navegador não está conseguindo carregar valor numérico das chaves no localStorage
+
+        function changeSpacing() {
+            let spacing = document.getElementById('chgSpacing').value;
+            localStorage.setItem("distance", spacing);
+            document.body.style.lineHeight = spacing + "px";
+        }
+
+        if (localStorage.getItem("distance")){
+            document.body.style.lineHeight = localStorage.getItem("distance"+"px");
+        }
+        //let spacing = localStorage.spacing;
+        //if (spacing) document.body.style.lineHeight = spacing;  **navegador não está conseguindo carregar valor numérico das chaves no localStorage
+        
+        function changeTypeFont() {
+            let typeFont = document.getElementById('chgTypFont').value;
+            localStorage.setItem("fontFamily", typeFont);
+            document.body.style.fontFamily = typeFont;
+        }
+
+        let typeFont = localStorage.fontFamily;
+        if (typeFont) document.body.style.fontFamily = typeFont;
+
+    </script>
+
+</body>
+
+</html>
+
+<!--  ***** RASCUNHOS ***
+
+        <form action="#" method="post">
+        <div>
+            <label for="chgBkgColor">Altere a cor de fundo</label>
+            <input type="text" id="chgBkgColor"><br><br>                    -->
+<!-- style="color: darkgrey" value="Type a color name (eng)"
+                onfocus="this.value='';"  onchange="changeBkgColor()"-->
+<!--            <input type="button" id="colorBtn" value="Clique" onclick="changeBkgColor()">
+        </div>
+        <div>
+            <label for="chgTxtColor">Altere a cor da fonte</label>
+            <input type="text" id="chgTxtColor" style="color: darkgrey" value="Type a color name (eng)"
+                onfocus="this.value='';"><br><br>
+        </div>
+        <div>
+            <label for="chgFntSize">Altere o tamanho da fonte</label>
+            <input type="text" id="chgFntSize" style="color: darkgrey" value="Type a number"
+                onfocus="this.value='';"><br><br>
+        </div>
+        <div>
+            <label for="chgSpacing">Altere o espaçamento do texto</label>
+            <input type="text" id="chgSpacing" style="color: darkgrey" value="Type a number"
+                onfocus="this.value='';"><br><br>
+        </div>
+        <div>
+            <label>Altere o tipo da fonte</label>
+            <input type="text" name="chgTypFont" style="color: darkgrey" value="Type a font name (eng)"
+                onfocus="this.value='';"><br><br>
+        </div>
+    </form>                                         
+    <h1>Change BkgColor via Texto</h1> 
+      //    window.onload = function () {   
+              //if (typeof (Storage) !== "undefined") {
+
+//                  } else console.log("Não há suporte para Web Storage");
+//              }
+
+
+            // let boxOne = document.getElementById("chgBkgColor");
+
+            // divColor.style.backgroundColor = "boxOne";
+
+            // boxOne = addEventListener("change", function(event){
+            //     let bkgColor = event.target.innerHTML; 
+            //     localStorage.setItem("color", bkgcolor);
+            //     document.body.style.backgroundColor = bkgColor;
+            // });
+
+            // let btnTwo = document.getElementById("chgTxtColor");
+            // let btnThree = document.getElementById("chgFntSize");
+            // let btnFour = document.getElementById("chgSpacing");
+            // let btnFive = document.getElementById("chgTypFont");
+            // //console.log("Há suporte para Web Storage")
+
+-->

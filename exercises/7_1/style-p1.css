@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#centro {
+    background: #333;
+    height: 633px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#topo {
+    background: #f00;
+    height: 20%;
+    text-align: center;
+    width: 100%;
+}
+
+#topo h1 {
+    color: #fff;
+    font-size: 2em;
+}
+
+#padding-coluna {
+    padding: 10px;
+}
+
+.coluna2 {
+    background: #999;
+    float: left;
+    height: 30%;
+    text-align: center;
+    width: 50%;
+}
+
+@media screen and (min-width:320px) and (max-width:568px) {
+    #centro {
+        width: 100%;
+    }
+
+    #topo {
+        background: #ff0;
+    }
+
+    #topo h1 {
+        color: #f00;
+    }
+
+    .coluna2 {
+        float: none;
+        margin-top: 5px;
+        width: 100%;
+    }
+}

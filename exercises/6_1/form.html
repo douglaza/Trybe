@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <Title>Exercise 6.1 - Forms</Title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.slim.min.js"></script>
+    <script type="text/javascript"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+
+    <style>
+        div {
+            max-height: 80px;
+            border: 1px dashed yellow;
+        }
+
+        .campo {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        /* .tipo {
+            padding: 100px;
+        } */
+
+        .ajusta {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <form action="" method="post" name="exercicio61">
+            <fieldset class="row">
+                <div class="col-12 d-flex flex-row">
+                    <div class="col-8 d-flex campo">
+                        <label>Nome</label><br>
+                        <input id="nome" type="text" maxlength="40" width="100px" required="required"><br><br>
+                    </div>
+                    <div class="col-4 campo">
+                        <label>email</label><br>
+                        <input type="text" maxlength="25" required="required"><br><br>
+                    </div>
+                </div>
+                <div class="col-12 d-flex flex-row">
+                    <div class=" col-4 d-flex campo">
+                        <label>CPF</label><br>
+                        <input id="cpf" type="text" maxlength="11" required="required"><br><br>
+                    </div>
+                    <div class="col-4 d-flex campo">
+                        <label>Veículo Placa</label><br>
+                        <input id="placa" type="text" onkeyup="this.value = this.value.toUpperCase();" maxlength="8"
+                            required="required"><br><br>
+                    </div>
+                    <div class="col-4 campo">
+                        <label>Telefone</label><br>
+                        <input id="celular" type="text" maxlength="15" required="required"><br><br>
+                    </div>
+                </div>
+                <div class="col-12 d-flex flex-row">
+                    <div class="col-8 d-flex campo">
+                        <label>Endereço</label><br>
+                        <input type="text" maxlength="50" required="required"><br><br>
+                    </div>
+                    <div class="col-4 d-flex campo">
+                        <p class=" tipo">Tipo</p>
+                        <label for="apto">
+                            <input name="tipo" id="apto" value="1" type="radio">Apartamento
+                        </label>
+                        <label for="casa">
+                            <input name="tipo" id="casa" value="2" type="radio">Casa
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12 d-flex flex-row">
+                    <div class="col-4 d-flex campo">
+                        <label>Cidade</label><br>
+                        <input type="text" maxlength="28" required="required"><br><br>
+                    </div>
+                    <div class="col-4 d-flex campo">
+                        <label for="estado">Estado</label><br>
+                        <select id="estado" required="required" name="estado">
+                            <option selected="selected" value="">Selecione</option>
+                        </select>
+                    </div>
+                    <div class="col-4 d-flex campo">
+                        <label>CEP</label><br>
+                        <input id="cep" type="text" maxlength="10" required="required"><br><br>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="row">
+                <div class="col-12 d-flex flex-row">
+                    <div class="col-7 d-flex flex-comun">
+                        <div class="d-flex flex-column ajusta">
+                            <div class="col-7 d-flex ajusta">
+                                <label>Cargo</label><br>
+                                <input type="text" maxlength="40" required="required"><br><br>
+                            </div>
+                            <div class="col-7 d-flex ajusta">
+                                <label>Descrição do cargo</label><br>
+                                <input type="text" maxlength="500" required="required"><br><br>
+                            </div>
+                            <div class="col-7 d-flex ajusta">
+                                <label>Salário</label><br>
+                                R$<input id="salario" type="text" maxlength="13" required="required"><br><br>
+                            </div>
+                            <div class="col-7 d-flex ajusta">
+                                <label>Data de início</label><br>
+                                <input id="date" type="text" placeholder="DD/MM/YYYY" onfocus="(this.type='date')"
+                                    required="required"><br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex">
+                        <div class="d-flex flex-column">
+                            <!-- <div class="col-5 d-flex"> -->
+                            <label>Resumo do curriculo</label><br>
+                            <textarea maxlength="1000" required="required"></textarea>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit" name="Submit" id="valida-form">Submeter</button> <!-- -->
+            <button type="reset" name="Reset" onclick="limpaForm()">Limpar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+<!-- testing prettier -->
+
+</html>

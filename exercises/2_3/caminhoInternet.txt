@@ -1,0 +1,12 @@
+
+Quando você digita google.com no navegador, o que acontece entre o instante em que você clica em “Enter” (ou “ir/carregar”) e o momento em que a página inicial do Google aparece na tela? 
+
+1 - O browser analisa a URL e identifica o protocolo, dominio e rota
+2 - O browser se comunica com o ISP para procurar no DNS o endereço IP
+3 - O ISP recebe o IP e manda para o browser
+4 - O browser pega o IP e porta da URL e abre a conexão TCP
+5 - O browser manda um HTTP request ao servidor requisitando a pagina
+6 - O servidor procura a pagina do endereço e retorna para o cliente, caso não ache retorna um erro 404
+7 - O browser analisa a pagina HTML lendo todos os recursos como imagens, CSS e JS
+8 - Faz novos HTTP requests se necessário
+9 - A pagina vai ser renderizada pela browser 

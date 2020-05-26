@@ -1,0 +1,56 @@
+body {
+    background-image: url(/cartas/cartas/mesa-verde.jpg);
+}
+
+.carta {
+    /* display: flex; */
+    left: 0px;
+    width: 120px;
+    transition: transform 2s;
+    /* transition-duration: 0.2s;
+    
+    outline: 0; */
+
+}
+
+/* .carta:focus {
+    transform: translateY(-20px);
+} */
+
+
+.grid-carta {
+    border: 1px solid white;
+    display: flex;
+}
+
+/*
+.verso {
+     height: 200px; 
+}
+
+
+#carta-oculta {
+    animation-name: chosseOne;
+}
+
+#carta-oculta:active {}
+
+
+ #exercise-4 {
+    animation-duration: 5s;
+    animation-name: moveToRight;
+    animation-play-state: paused;
+}
+
+#exercise-4:hover {
+    animation-play-state: running;
+}
+    @keyframes moveToRight {
+        from {
+            margin-left: 0%;
+        }
+
+        to {
+            margin-left: 96%;
+        }
+    } */

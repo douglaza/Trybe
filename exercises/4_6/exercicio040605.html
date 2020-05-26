@@ -1,0 +1,47 @@
+<! DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title> Caminhada pelos gatos </title>
+    </head>
+
+
+    <body style="margin:0px;">
+
+        <img id="black-cat" style="position:absolute;"
+            src="http://www.anniemation.com/clip_art/images/cat-walk.gif"><br>
+
+
+        <script>
+            let position = 0,
+                blackCat = document.getElementById('black-cat'),
+                timer = 0;
+
+            timer = setInterval(function () {
+                position += 10;
+                if (position > 1000) {
+                    //clearInterval(timer);     //*** Exercício Regular
+                    //position = 0;             //*** BONUS 1: When the cat reaches the right-hand of the screen, restart them at the left hand side ("0px") ***
+                    moveBack();                 //*** BONUS 2: When the cat reaches the right-hand of the screen, make them move backwards instead ***
+                    console.log("volte, bichano")
+                } else
+                    blackCat.style.marginLeft = position + "px";
+            }, 1);
+
+
+            function moveBack() {
+                timer = setInterval(function () {
+                    if (position < 0) {
+                        moveFwd();
+                        position = 0;
+                    } else
+                        blackCat.style.marginLeft = position + "px";
+                    position -= 10;
+                }, 1);
+            }
+        </script>
+
+    </body>
+
+    </html>

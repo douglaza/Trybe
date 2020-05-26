@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .cabuloso{
+            background-color: blue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            border:darkorange;
+        }
+        .doPovo{
+            background-color: royalblue;
+            font-family: monospace;
+            font-style: italic;
+        }
+    </style>
+  <body>
+    <h2 id="page-title">Cruzeiro</h2>
+<!--    <p id="paragraph">Dê uma cor para este parágrafo!</p>    primeira parte da aula-->
+    <p class="cabuloso">Jamais Vencido!!</p>
+    <h4 id="subtitle">Cruzeirão é Cabuloso!!</h4>
+<!--    <p id="second-paragraph">O Time do Povo!<br>    primeira parte da aula-->
+    <p class="doPovo">O Time do Povo!<br>
+        6x1 ainda dói...<br></p>
+
+
+    <script>
+      var paragraph = document.getElementById("paragraph");
+        // paragraph.style.color = "blue";                                          primeira parte da aula
+              
+        // console.log(document.getElementById("page-title").innerHTML)             primeira parte da aula
+        // console.log(document.getElementById("second-paragraph").innerHTML)       primeira parte da aula
+        console.log(document.getElementById("subtitle").innerHTML)
+
+        // console.log(document.getElementsByClassName("cabuloso")[0].innerHTML)    segunda parte da aula
+        // console.log(document.getElementsByClassName("doPovo")[0].innerHTML)      segunda parte da aula
+        // console.log(document.getElementsByTagName("h4")[0].innerHTML)            segunda parte da aula
+
+        console.log(document.querySelector(".cabuloso"))
+        console.log(document.querySelectorAll(".doPovo")[0].innerHTML)
+        console.log(document.querySelector("h4"))
+
+
+    </script>
+  </body>
+</html>

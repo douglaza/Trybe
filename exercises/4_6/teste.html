@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #myDiv {
+            border: 1px solid #FF0000;
+        }
+    </style>
+</head>
+
+<!-- <body>
+
+    <div id="myDiv">This is a div.</div>
+    <br>
+    <button type="button" onclick="myFunction()">Set left margin</button>
+ -->
+    <body style="margin:0px;">
+        <img id="imagem" style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif" />
+
+        <script>
+            function myFunction() {
+                document.getElementById("myDiv").style.marginLeft = "50px";
+            }
+
+
+
+            var anda = 0, //Work with actual number type
+                imagem = document.getElementById('imagem'),
+                timerId = 0;
+            timerId = setInterval(function () { //This function is called by the browser every 33 milliseconds
+                if (anda++ > 1250) {
+                    clearInterval(timerId); //Sleft the interval because left is > 200
+                }
+                imagem.style.left = anda + "px"; //Only convert to number + "px" when we need to set .style.left
+
+
+            }, 1);
+        </script>
+    </body>
+
+</body>
+
+</html>
